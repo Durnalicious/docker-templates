@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/durn/durn-godaddy-dns.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Network:DNS</Category>
+  <Name>Durn's GoDaddy Dynamic DNS</Name>
+  <Description>
+    Durn's GoDaddy Dynamic DNS is meant to update GoDaddy Domain DNS records using a valid API Key Pair. It works by checking WAN IP against the DNS records, and issuing an update if records differ.[br]
+    Big thanks to lmammino for making the godaddy-dns package run in this container, please support his amazing work.[br][br]
+  </Description>
+  <Overview>
+    Durn's GoDaddy Dynamic DNS is meant to update GoDaddy Domain DNS records using a valid API Key Pair. It works by checking WAN IP against the DNS records, and issuing an update if records differ.[br]
+    Big thanks to lmammino for making the godaddy-dns package run in this container, please support his amazing work.[br][br]
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/durnalicious/durn-godaddy-dns/</Registry>
+  <GitHub>https://github.com/Durnalicious/durn-godaddy-dns</GitHub>
+  <Repository>durnalicious/durn-godaddy-dns</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/durn/images/godaddy-icon.png</Icon>
+  <DonateText>Will create donate link if requested.</DonateText>
+  <DonateLink>#</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
