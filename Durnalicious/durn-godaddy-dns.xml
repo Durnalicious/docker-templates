@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container>
   <TemplateURL>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/Durnalicious/durn-godaddy-dns.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Network:DNS</Category>
@@ -21,16 +21,7 @@
   <Networking>
     <Mode>bridge</Mode>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
+  <Environment/>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/config</HostDir>
@@ -39,8 +30,4 @@
     </Volume>
   </Data>
   <Icon>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/Durnalicious/images/godaddy-icon.png</Icon>
-  <DonateText>Will create donate link if requested.</DonateText>
-  <DonateLink>#</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+</Container>
