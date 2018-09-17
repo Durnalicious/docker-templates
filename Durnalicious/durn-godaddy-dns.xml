@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <TemplateURL>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/durn/durn-godaddy-dns.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/Durnalicious/durn-godaddy-dns.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Network:DNS</Category>
   <Name>Durn's GoDaddy Dynamic DNS</Name>
@@ -38,7 +38,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Icon>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/durn/images/godaddy-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Durnalicious/docker-templates/latest/Durnalicious/images/godaddy-icon.png</Icon>
   <DonateText>Will create donate link if requested.</DonateText>
   <DonateLink>#</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
